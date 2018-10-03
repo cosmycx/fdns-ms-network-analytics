@@ -1,4 +1,6 @@
+flask
 geopandas
-osmnx
 rtree
 matplotlib
+osmnx
+
