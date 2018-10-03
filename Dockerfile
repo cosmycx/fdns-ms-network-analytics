@@ -4,6 +4,9 @@ RUN apt-get update -y
 RUN apt-get install -y build-essential wget
 COPY . /app
 WORKDIR /app
+
+EXPOSE 5000
+
 #RUN pip install -r requirements.txt
 #RUN wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
 #RUN bash Miniconda2-latest-Linux-x86_64.sh
