@@ -1,6 +1,11 @@
 from flask import Flask
 from flask import jsonify, request
-# import osmnx as ox
+
+# osmnx.core.graph_from_address
+# osmnx.core.graph_from_point
+
+
+#from osmnx import osmnx
 # import geopandas as gpd
 
 # Instantiate our Node
@@ -20,7 +25,7 @@ def graph_from_place():
   }
   return jsonify(response), 200
 
-
+# locationStr, network_mode
 @app.route('/api', methods=['GET', 'POST'])
 def add_message():
 
@@ -80,7 +85,8 @@ def add_message():
 #     return jsonify(response), 200
 
 
-
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
+
+    
