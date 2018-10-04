@@ -1,9 +1,7 @@
-# FDNS MICROSERVICE STREET NETWORK ANALYSIS
+# FDNS MICROSERVICE STREET NETWORK ANALYTIC
 This repository was created for use by CDC programs to collaborate on public health surveillance related projects in support of the CDC Surveillance Strategy.  Github is not hosted by the CDC, but is used by CDC and its partners to share information and collaborate on software.
 
 ## ----- Start of respository specific READ ME -----
-
-### This repository specific READ ME
 
 ## Installation (Quick Read)
 1. Clone the repository
