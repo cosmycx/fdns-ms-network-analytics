@@ -3,4 +3,4 @@ if [[ "$1" == "-h" ]]; then
 fi
 
 echo "---> Running here"
-/app/app.py
+exec /app/app.py
