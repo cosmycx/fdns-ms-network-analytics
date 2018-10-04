@@ -19,7 +19,6 @@ def get_file(filename):  # pragma: no cover
     except IOError as exc:
         return str(exc)
 
-#basic_stats
 
 # ------------------------------------------------
 #               / 
@@ -29,15 +28,19 @@ def index():
     return 'Street Network Analysis'
 
 # ------------------------------------------------
-#               /graph_from_point
+#               /basic_stats_from_point
 # ------------------------------------------------
-@app.route('/graph_from_point', methods=['POST'])
-def graph_from_point():
+@app.route('/basic_stats_from_point', methods=['POST'])
+def basic_stats_from_point():
 
     values = request.get_json()
     latitude = values.get('latitude')
     longitude = values.get('longitude')
     network_type = values.get('network_type')
+
+    if network_type is None:
+      return "Error, please supply a valid network_type", 400
+    
     print(latitude, longitude)
     print(network_type)
 
@@ -50,12 +53,32 @@ def graph_from_point():
     content = get_file('graph_from_location.graphml')
     return Response(content, mimetype="application/xml")
 
-    # if latitude or longitude is None:
-    #     return "Error, please supply valid coordinates", 400
-    if network_type is None:
-        return "Error, please supply a valid network_type", 400
 
-    return 'ok', 200
+# ------------------------------------------------
+#               /graph_from_point
+# ------------------------------------------------
+@app.route('/graph_from_point', methods=['POST'])
+def graph_from_point():
+
+    values = request.get_json()
+    latitude = values.get('latitude')
+    longitude = values.get('longitude')
+    network_type = values.get('network_type')
+
+    if network_type is None:
+      return "Error, please supply a valid network_type", 400
+    
+    print(latitude, longitude)
+    print(network_type)
+
+    coord = (latitude, longitude)
+
+    G = ox.graph_from_point(coord, network_type=network_type)
+
+    ox.save_graphml(G, filename="graph_from_location.graphml", folder="/app/output")
+
+    content = get_file('output/graph_from_location.graphml')
+    return Response(content, mimetype="application/xml")
 
 # ------------------------------------------------
 #               /graph_from_place
@@ -76,13 +99,13 @@ def graph_from_place():
 
     G = ox.graph_from_place(location, network_type=network_type)
 
-    ox.save_graphml(G, filename="graph_from_place.graphml", folder="/app")
+    ox.save_graphml(G, filename="graph_from_place.graphml", folder="/app/output")
 
     #jdata = json_graph.tree_data(G,root=1)
     #graphml_json = json_graph.tree_graph(jdata)
     #return jsonify(graphml_json), 200
     # return 'ok', 200
-    content = get_file('graph_from_place.graphml')
+    content = get_file('output/graph_from_place.graphml')
     return Response(content, mimetype="application/xml")
 
 

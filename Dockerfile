@@ -25,6 +25,7 @@ RUN conda install -y -c conda-forge \
 COPY . /app
 
 WORKDIR /app
+RUN mkdir output
 
 EXPOSE 5000
 ENV PATH /opt/conda/bin:$PATH
