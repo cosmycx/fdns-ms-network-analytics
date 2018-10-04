@@ -55,19 +55,19 @@ paths:
         '500':
           $ref: '#/components/responses/StatusInternalServerError-500'
           
-  /graph_from_address:
+  /graph_from_place:
     post:
       tags:
        - snxa
       summary: "receives JSON and returns graph"
 
       requestBody:
-        description: graph_from_address JSON
+        description: graph_from_place JSON
         required: true
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/from_address_JSON'
+              $ref: '#/components/schemas/graph_from_place'
 
       description: header responses
       responses:
@@ -84,29 +84,31 @@ components:
 
   schemas:
 
-    from_address_JSON:
+    graph_from_place:
       description: this is the object received
       type: object
       properties:
         location:
           type: string
           description: address of location
-        network_mode:
+        network_type:
           type: string
           description: network mode e.g. drive, walk
 
-      required: [location, network_mode]
+      required: [location, network_type]
     
     from_point_JSON:
       description: this is the object received
       type: object
       properties:
-        location:
+        latitude:
+          type: number
+        longitude:
+          type: number
+          description: address of location e.g. Manhattan, New York, USA
+        network_type:
           type: string
-          description: address of location
-        network_mode:
-          type: string
-          description: network mode e.g. drive, walk
+          description: network type e.g. drive, walk
 
       required: [location, network_mode]
 
