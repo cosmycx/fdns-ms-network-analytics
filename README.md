@@ -2,7 +2,13 @@
 This repository was created for use by CDC programs to collaborate on public health surveillance related projects in support of the CDC Surveillance Strategy.  Github is not hosted by the CDC, but is used by CDC and its partners to share information and collaborate on software.
 
 ## ----- Start of respository specific READ ME -----
-### This repository specific READ ME instructions go here
+
+### This repository specific READ ME
+
+## Installation (TLDR)
+1. Clone the repository
+2. docker build -t snxa .
+3. docker run -it -p 5000:5000 snxa
 
 Replace everything within this section demarcated with “-----“ with material appropriate to your repo that is useful to your developers and users like installation steps, user guide etc.
 ## ----- End of respository specific READ ME -----
