@@ -1,7 +1,6 @@
 # FDNS MICROSERVICE STREET NETWORK ANALYTIC
 This repository was created for use by CDC programs to collaborate on public health surveillance related projects in support of the CDC Surveillance Strategy.  Github is not hosted by the CDC, but is used by CDC and its partners to share information and collaborate on software.
 
-## ----- Start of respository specific READ ME -----
 
 ## Installation (Quick Read)
 1. Clone the repository
@@ -11,9 +10,8 @@ This repository was created for use by CDC programs to collaborate on public hea
 Replace everything within this section demarcated with “-----“ with material appropriate to your repo that is useful to your developers and users like installation steps, user guide etc.
 
 ## API Documentation
-openapi.yaml
+openapi.yaml file available
 
-## ----- End of respository specific READ ME -----
   
 ## Public Domain
 This repository constitutes a work of the United States Government and is not
