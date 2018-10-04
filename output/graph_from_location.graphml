@@ -4499,7 +4499,7 @@
     <edge id="0" source="9791490" target="591983189">
       <data key="d8">[4256128, 476247613]</data>
       <data key="d10">Chitty Street</data>
-      <data key="d11">['unclassified', 'residential']</data>
+      <data key="d11">['residential', 'unclassified']</data>
       <data key="d15">no</data>
       <data key="d9">False</data>
       <data key="d13">39.423</data>
@@ -4518,7 +4518,7 @@
     <edge id="0" source="9791492" target="2047806106">
       <data key="d8">[4259296, 4082609]</data>
       <data key="d9">True</data>
-      <data key="d10">['Argyll Street', 'Little Argyll Street']</data>
+      <data key="d10">['Little Argyll Street', 'Argyll Street']</data>
       <data key="d11">unclassified</data>
       <data key="d12">30 mph</data>
       <data key="d13">148.45000000000002</data>
@@ -4536,7 +4536,7 @@
     </edge>
     <edge id="0" source="9791492" target="25473399">
       <data key="d8">[232486356, 240343183]</data>
-      <data key="d16">['3', '2']</data>
+      <data key="d16">['2', '3']</data>
       <data key="d10">Great Marlborough Street</data>
       <data key="d11">tertiary</data>
       <data key="d12">30 mph</data>
@@ -4611,7 +4611,7 @@
     <edge id="0" source="9791497" target="9791496">
       <data key="d8">[461699427, 148004644, 325435282, 299682131, 4258936]</data>
       <data key="d9">True</data>
-      <data key="d10">['Harewood Place', 'Holles Street']</data>
+      <data key="d10">['Holles Street', 'Harewood Place']</data>
       <data key="d11">tertiary</data>
       <data key="d12">30 mph</data>
       <data key="d13">194.559</data>
@@ -4742,7 +4742,7 @@
       <data key="d8">[303982852, 49797412, 49797415]</data>
       <data key="d9">True</data>
       <data key="d18">B404</data>
-      <data key="d10">["Saint Martin's Lane", "St. Martin's Lane"]</data>
+      <data key="d10">["St. Martin's Lane", "Saint Martin's Lane"]</data>
       <data key="d11">secondary</data>
       <data key="d12">30 mph</data>
       <data key="d13">171.353</data>
@@ -4750,8 +4750,8 @@
     </edge>
     <edge id="0" source="300501017" target="25256616">
       <data key="d8">[251621966, 202195796, 251621973, 204726685, 204726686]</data>
-      <data key="d10">['Davies Street', 'Stratford Place']</data>
-      <data key="d11">['unclassified', 'residential']</data>
+      <data key="d10">['Stratford Place', 'Davies Street']</data>
+      <data key="d11">['residential', 'unclassified']</data>
       <data key="d12">30 mph</data>
       <data key="d9">False</data>
       <data key="d13">183.86499999999998</data>
@@ -5035,7 +5035,7 @@
     <edge id="0" source="1678452814" target="9513062">
       <data key="d8">[4236997, 4260285]</data>
       <data key="d9">True</data>
-      <data key="d10">['Earlham Street', 'Tower Street']</data>
+      <data key="d10">['Tower Street', 'Earlham Street']</data>
       <data key="d11">unclassified</data>
       <data key="d12">20 mph</data>
       <data key="d13">181.65200000000002</data>
@@ -5702,7 +5702,7 @@
     <edge id="0" source="454373603" target="454212847">
       <data key="d8">[4253376, 35583681]</data>
       <data key="d9">True</data>
-      <data key="d10">['Fitzmaurice Place', 'Curzon Street']</data>
+      <data key="d10">['Curzon Street', 'Fitzmaurice Place']</data>
       <data key="d11">tertiary</data>
       <data key="d12">30 mph</data>
       <data key="d13">115.00500000000002</data>
@@ -6188,7 +6188,7 @@
     <edge id="0" source="1616122145" target="1614926342">
       <data key="d8">[148519546, 148386199]</data>
       <data key="d9">True</data>
-      <data key="d10">['Shelton Street', 'Arne Street']</data>
+      <data key="d10">['Arne Street', 'Shelton Street']</data>
       <data key="d11">unclassified</data>
       <data key="d12">30 mph</data>
       <data key="d13">118.31800000000001</data>
@@ -6566,7 +6566,7 @@
     <edge id="0" source="168272" target="25256828">
       <data key="d8">[502228874, 18791979, 232724588]</data>
       <data key="d9">True</data>
-      <data key="d10">['Hanover Square', 'Brook Street']</data>
+      <data key="d10">['Brook Street', 'Hanover Square']</data>
       <data key="d11">unclassified</data>
       <data key="d12">30 mph</data>
       <data key="d13">133.011</data>
@@ -7360,8 +7360,8 @@
       <data key="d8">[251621969, 4253571, 574843606, 4259446]</data>
       <data key="d9">True</data>
       <data key="d18">B524</data>
-      <data key="d10">['Gilbert Street', 'James Street']</data>
-      <data key="d11">['unclassified', 'residential', 'secondary']</data>
+      <data key="d10">['James Street', 'Gilbert Street']</data>
+      <data key="d11">['secondary', 'residential', 'unclassified']</data>
       <data key="d12">30 mph</data>
       <data key="d13">178.15200000000002</data>
       <data key="d14">LINESTRING (-0.1505998 51.515002, -0.1504649 51.5146942, -0.1503658 51.5144681, -0.1502779 51.5143594, -0.1502422 51.5143086, -0.1502232 51.5142595, -0.150197 51.5141945, -0.1501629 51.5141118, -0.1500626 51.5138968, -0.1499987 51.5137597, -0.1499305 51.5136136, -0.1498633 51.5134696)</data>
@@ -7448,7 +7448,7 @@
       <data key="d9">True</data>
       <data key="d16">1</data>
       <data key="d18">A400</data>
-      <data key="d10">['Trafalgar Square', "Saint Martin's Place"]</data>
+      <data key="d10">["Saint Martin's Place", 'Trafalgar Square']</data>
       <data key="d11">primary</data>
       <data key="d12">30 mph</data>
       <data key="d13">56.236000000000004</data>
@@ -7781,7 +7781,7 @@
       <data key="d8">[4256536, 551258353, 551258352, 4256534]</data>
       <data key="d9">True</data>
       <data key="d10">['Craven Street', 'Corner House Street']</data>
-      <data key="d11">['unclassified', 'residential']</data>
+      <data key="d11">['residential', 'unclassified']</data>
       <data key="d12">30 mph</data>
       <data key="d13">213.465</data>
       <data key="d19">building_passage</data>
@@ -7877,7 +7877,7 @@
     <edge id="0" source="1685938638" target="25495409">
       <data key="d8">[587550106, 235991623]</data>
       <data key="d9">True</data>
-      <data key="d16">['3', '2']</data>
+      <data key="d16">['2', '3']</data>
       <data key="d18">A4201</data>
       <data key="d10">Portland Place</data>
       <data key="d11">primary</data>
@@ -8048,7 +8048,7 @@
     <edge id="0" source="2389991902" target="1938580020">
       <data key="d8">[230502962, 23715300]</data>
       <data key="d9">True</data>
-      <data key="d16">['3', '2']</data>
+      <data key="d16">['2', '3']</data>
       <data key="d18">A3212</data>
       <data key="d10">Whitehall</data>
       <data key="d11">primary</data>
@@ -8120,7 +8120,7 @@
       <data key="d9">True</data>
       <data key="d16">['2', '1']</data>
       <data key="d18">A4201</data>
-      <data key="d10">['Portland Place', 'Langham Place']</data>
+      <data key="d10">['Langham Place', 'Portland Place']</data>
       <data key="d11">primary</data>
       <data key="d12">30 mph</data>
       <data key="d13">153.86999999999998</data>
@@ -8437,7 +8437,7 @@
     <edge id="0" source="14791189" target="14791190">
       <data key="d8">[368203568, 4253395]</data>
       <data key="d10">Morwell Street</data>
-      <data key="d11">['unclassified', 'residential']</data>
+      <data key="d11">['residential', 'unclassified']</data>
       <data key="d12">20 mph</data>
       <data key="d9">False</data>
       <data key="d13">146.95499999999998</data>
@@ -8466,7 +8466,7 @@
     <edge id="0" source="14791190" target="14791189">
       <data key="d8">[368203568, 4253395]</data>
       <data key="d10">Morwell Street</data>
-      <data key="d11">['unclassified', 'residential']</data>
+      <data key="d11">['residential', 'unclassified']</data>
       <data key="d12">20 mph</data>
       <data key="d15">permissive</data>
       <data key="d9">False</data>
@@ -8778,7 +8778,7 @@
     <edge id="0" source="591983189" target="9791490">
       <data key="d8">[4256128, 476247613]</data>
       <data key="d10">Chitty Street</data>
-      <data key="d11">['unclassified', 'residential']</data>
+      <data key="d11">['residential', 'unclassified']</data>
       <data key="d9">False</data>
       <data key="d13">39.423</data>
       <data key="d15">no</data>
@@ -8787,7 +8787,7 @@
     <edge id="0" source="591983189" target="591983205">
       <data key="d8">[348798646, 46339894, 439251036, 439251037, 439251038]</data>
       <data key="d10">Charlotte Mews</data>
-      <data key="d11">['unclassified', 'residential']</data>
+      <data key="d11">['residential', 'unclassified']</data>
       <data key="d12">20 mph</data>
       <data key="d9">False</data>
       <data key="d13">86.27</data>
@@ -8805,7 +8805,7 @@
     <edge id="0" source="591983205" target="591983189">
       <data key="d8">[46339894, 348798646, 439251036, 439251037, 439251038]</data>
       <data key="d10">Charlotte Mews</data>
-      <data key="d11">['unclassified', 'residential']</data>
+      <data key="d11">['residential', 'unclassified']</data>
       <data key="d12">20 mph</data>
       <data key="d9">False</data>
       <data key="d13">86.27000000000001</data>
@@ -9259,7 +9259,7 @@
       <data key="d8">[251621966, 202195796, 251621973, 204726685, 204726686]</data>
       <data key="d9">False</data>
       <data key="d10">['Stratford Place', 'Davies Street']</data>
-      <data key="d11">['unclassified', 'residential']</data>
+      <data key="d11">['residential', 'unclassified']</data>
       <data key="d12">30 mph</data>
       <data key="d15">no</data>
       <data key="d13">183.86499999999998</data>
@@ -9398,8 +9398,8 @@
       <data key="d8">[589665715, 589660342, 585743671]</data>
       <data key="d9">True</data>
       <data key="d16">2</data>
-      <data key="d18">['A401', 'A40']</data>
-      <data key="d10">['Shaftesbury Avenue', 'High Holborn']</data>
+      <data key="d18">['A40', 'A401']</data>
+      <data key="d10">['High Holborn', 'Shaftesbury Avenue']</data>
       <data key="d11">primary</data>
       <data key="d12">20 mph</data>
       <data key="d13">49.63000000000001</data>
@@ -9676,7 +9676,7 @@
     <edge id="0" source="3557235449" target="25607361">
       <data key="d8">[349937184, 4369410, 4369036]</data>
       <data key="d10">['Carlton Gardens', 'Carlton House Terrace']</data>
-      <data key="d11">['unclassified', 'residential']</data>
+      <data key="d11">['residential', 'unclassified']</data>
       <data key="d9">False</data>
       <data key="d13">61.687999999999995</data>
       <data key="d14">LINESTRING (-0.1340504 51.5055939, -0.1335854 51.5057462, -0.1334797 51.505787, -0.1332708 51.5058624)</data>
@@ -10205,7 +10205,7 @@
       <data key="d8">[511545507, 303559644]</data>
       <data key="d9">True</data>
       <data key="d10">Torrington Place</data>
-      <data key="d11">['tertiary', 'primary_link']</data>
+      <data key="d11">['primary_link', 'tertiary']</data>
       <data key="d12">20 mph</data>
       <data key="d13">122.872</data>
       <data key="d14">LINESTRING (-0.133663 51.5220265, -0.133746 51.5219933, -0.1349793 51.5215011, -0.1350265 51.5214823, -0.135065 51.5214672, -0.1351047 51.5214529, -0.1351603 51.5214324)</data>
@@ -10347,7 +10347,7 @@
       <data key="d9">True</data>
       <data key="d16">1</data>
       <data key="d10">Rupert Street</data>
-      <data key="d11">['unclassified', 'residential']</data>
+      <data key="d11">['residential', 'unclassified']</data>
       <data key="d13">40.093</data>
       <data key="d14">LINESTRING (-0.1332828 51.5118195, -0.1331341 51.5116169, -0.1330266 51.5114964)</data>
     </edge>
@@ -10547,7 +10547,7 @@
     <edge id="0" source="438170606" target="1678452820">
       <data key="d8">[438301430, 217241358]</data>
       <data key="d9">True</data>
-      <data key="d10">["Short's Gardens", 'Shorts Gardens']</data>
+      <data key="d10">['Shorts Gardens', "Short's Gardens"]</data>
       <data key="d11">unclassified</data>
       <data key="d12">20 mph</data>
       <data key="d13">137.381</data>
@@ -11054,7 +11054,7 @@
     </edge>
     <edge id="0" source="25257028" target="452236343">
       <data key="d8">[4253636, 38310799]</data>
-      <data key="d10">['Woodstock Street', 'Blenheim Street']</data>
+      <data key="d10">['Blenheim Street', 'Woodstock Street']</data>
       <data key="d11">residential</data>
       <data key="d9">False</data>
       <data key="d13">119.547</data>
@@ -11707,7 +11707,7 @@
     </edge>
     <edge id="0" source="1663003820" target="26559620">
       <data key="d8">[4358441, 4360148]</data>
-      <data key="d10">['Carlton Street', "St Alban's Street"]</data>
+      <data key="d10">["St Alban's Street", 'Carlton Street']</data>
       <data key="d11">residential</data>
       <data key="d9">False</data>
       <data key="d13">77.814</data>
@@ -11886,7 +11886,7 @@
     <edge id="0" source="25607361" target="3557235449">
       <data key="d8">[349937184, 4369410, 4369036]</data>
       <data key="d10">['Carlton Gardens', 'Carlton House Terrace']</data>
-      <data key="d11">['unclassified', 'residential']</data>
+      <data key="d11">['residential', 'unclassified']</data>
       <data key="d9">False</data>
       <data key="d13">61.688</data>
       <data key="d14">LINESTRING (-0.1332708 51.5058624, -0.1334797 51.505787, -0.1335854 51.5057462, -0.1340504 51.5055939)</data>
@@ -13507,7 +13507,7 @@
     </edge>
     <edge id="0" source="25257292" target="2217021162">
       <data key="d8">[4253448, 4253439]</data>
-      <data key="d10">['Farm Street', "Hay's Mews"]</data>
+      <data key="d10">["Hay's Mews", 'Farm Street']</data>
       <data key="d11">residential</data>
       <data key="d9">False</data>
       <data key="d13">194.336</data>
@@ -13826,7 +13826,7 @@
     <edge id="0" source="21665132" target="21665140">
       <data key="d8">[4259178, 38060395]</data>
       <data key="d9">True</data>
-      <data key="d10">['Denmark Street', 'St Giles High Street']</data>
+      <data key="d10">['St Giles High Street', 'Denmark Street']</data>
       <data key="d11">unclassified</data>
       <data key="d12">['30 mph', '20 mph']</data>
       <data key="d13">42.218999999999994</data>
@@ -15120,7 +15120,7 @@
       <data key="d8">[136456829, 55873935]</data>
       <data key="d9">True</data>
       <data key="d10">Marshall Street</data>
-      <data key="d11">['unclassified', 'residential']</data>
+      <data key="d11">['residential', 'unclassified']</data>
       <data key="d12">20 mph</data>
       <data key="d13">62.866</data>
       <data key="d14">LINESTRING (-0.1376622 51.5130185, -0.1375108 51.5128531, -0.1374389 51.512776, -0.1374227 51.5127588, -0.1373683 51.5127025, -0.1371903 51.5125357)</data>
@@ -15486,7 +15486,7 @@
     </edge>
     <edge id="0" source="25529938" target="25530034">
       <data key="d8">[40470530, 4258963, 291536486]</data>
-      <data key="d10">['Stacey Street', 'Flitcroft Street']</data>
+      <data key="d10">['Flitcroft Street', 'Stacey Street']</data>
       <data key="d11">residential</data>
       <data key="d12">20 mph</data>
       <data key="d9">False</data>
@@ -16018,7 +16018,7 @@
       <data key="d8">[4253554, 4253551, 67551927]</data>
       <data key="d9">True</data>
       <data key="d16">1</data>
-      <data key="d10">['Willoughby Street', 'Coptic Street', 'Streatham Street']</data>
+      <data key="d10">['Coptic Street', 'Streatham Street', 'Willoughby Street']</data>
       <data key="d11">unclassified</data>
       <data key="d12">20 mph</data>
       <data key="d13">139.233</data>
@@ -16289,7 +16289,7 @@
     </edge>
     <edge id="0" source="25530034" target="25529938">
       <data key="d8">[40470530, 4258963, 291536486]</data>
-      <data key="d10">['Stacey Street', 'Flitcroft Street']</data>
+      <data key="d10">['Flitcroft Street', 'Stacey Street']</data>
       <data key="d11">residential</data>
       <data key="d12">20 mph</data>
       <data key="d9">False</data>
@@ -16367,7 +16367,7 @@
     <edge id="0" source="25257657" target="107813">
       <data key="d8">[590640978, 4254981, 4253894]</data>
       <data key="d9">True</data>
-      <data key="d10">['Sherwood Street', 'Denman Street']</data>
+      <data key="d10">['Denman Street', 'Sherwood Street']</data>
       <data key="d11">residential</data>
       <data key="d13">185.68</data>
       <data key="d14">LINESTRING (-0.1361479 51.5111896, -0.1355765 51.5107313, -0.1355377 51.5107007, -0.1350526 51.5107383, -0.1348423 51.5107524, -0.1341502 51.5108066, -0.134112 51.5108019, -0.1340625 51.5107914, -0.1339924 51.5107482, -0.1339402 51.5106947)</data>
@@ -16644,7 +16644,7 @@
     <edge id="0" source="108245" target="25257045">
       <data key="d8">[4259266, 196122557]</data>
       <data key="d9">True</data>
-      <data key="d10">['Clifford Street', 'New Bond Street']</data>
+      <data key="d10">['New Bond Street', 'Clifford Street']</data>
       <data key="d11">unclassified</data>
       <data key="d12">30 mph</data>
       <data key="d13">134.757</data>
@@ -16681,7 +16681,7 @@
       <data key="d8">[4370941, 4370942]</data>
       <data key="d9">True</data>
       <data key="d10">['New Bond Street', 'Grafton Street']</data>
-      <data key="d11">['unclassified', 'residential']</data>
+      <data key="d11">['residential', 'unclassified']</data>
       <data key="d12">30 mph</data>
       <data key="d13">160.534</data>
       <data key="d14">LINESTRING (-0.1430044 51.5101355, -0.1424536 51.5103572, -0.1419564 51.5099799, -0.141448 51.5095331)</data>
@@ -16840,7 +16840,7 @@
       <data key="d8">[38895570, 574832355, 251621965]</data>
       <data key="d9">True</data>
       <data key="d10">Binney Street</data>
-      <data key="d11">['unclassified', 'residential']</data>
+      <data key="d11">['residential', 'unclassified']</data>
       <data key="d12">30 mph</data>
       <data key="d13">97.211</data>
       <data key="d14">LINESTRING (-0.1502967 51.5133858, -0.1506119 51.5140107, -0.1506789 51.5141609, -0.1507113 51.514221)</data>
@@ -17514,7 +17514,7 @@
       <data key="d9">True</data>
       <data key="d16">['2', '1']</data>
       <data key="d18">A4201</data>
-      <data key="d10">['Portland Place', 'Langham Place']</data>
+      <data key="d10">['Langham Place', 'Portland Place']</data>
       <data key="d11">primary</data>
       <data key="d12">30 mph</data>
       <data key="d13">103.30799999999999</data>
@@ -18048,7 +18048,7 @@
     <edge id="0" source="25257795" target="25257797">
       <data key="d8">[498307596, 309458023]</data>
       <data key="d10">Hertford Street</data>
-      <data key="d11">['unclassified', 'residential']</data>
+      <data key="d11">['residential', 'unclassified']</data>
       <data key="d9">False</data>
       <data key="d13">114.13</data>
       <data key="d14">LINESTRING (-0.1477189 51.5061004, -0.1476157 51.5057766, -0.1487081 51.5056267)</data>
@@ -18070,7 +18070,7 @@
     <edge id="0" source="25257797" target="25257795">
       <data key="d8">[498307596, 309458023]</data>
       <data key="d10">Hertford Street</data>
-      <data key="d11">['unclassified', 'residential']</data>
+      <data key="d11">['residential', 'unclassified']</data>
       <data key="d9">False</data>
       <data key="d13">114.13</data>
       <data key="d14">LINESTRING (-0.1487081 51.5056267, -0.1476157 51.5057766, -0.1477189 51.5061004)</data>
@@ -19287,7 +19287,7 @@
     <edge id="0" source="9512915" target="107801">
       <data key="d8">[4358432, 4358790]</data>
       <data key="d9">True</data>
-      <data key="d10">['Whitcomb Street', 'Panton Street']</data>
+      <data key="d10">['Panton Street', 'Whitcomb Street']</data>
       <data key="d11">residential</data>
       <data key="d12">30 mph</data>
       <data key="d13">127.53800000000001</data>
@@ -19702,7 +19702,7 @@
     <edge id="0" source="9791487" target="194250">
       <data key="d8">[4256090, 70039739]</data>
       <data key="d9">True</data>
-      <data key="d10">['Whitfield Street', 'Windmill Street']</data>
+      <data key="d10">['Windmill Street', 'Whitfield Street']</data>
       <data key="d11">residential</data>
       <data key="d12">20 mph</data>
       <data key="d13">209.01199999999997</data>

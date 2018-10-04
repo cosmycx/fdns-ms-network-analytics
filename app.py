@@ -48,10 +48,12 @@ def basic_stats_from_point():
 
     G = ox.graph_from_point(coord, network_type=network_type)
 
-    ox.save_graphml(G, filename="graph_from_location.graphml", folder="/app")
+    basic_stats = ox.basic_stats(G)
 
-    content = get_file('graph_from_location.graphml')
-    return Response(content, mimetype="application/xml")
+    # ox.save_graphml(G, filename="graph_from_location.graphml", folder="/app")
+
+    # content = get_file('graph_from_location.graphml')
+    return Response(basic_stats, mimetype="application/xml")
 
 
 # ------------------------------------------------
