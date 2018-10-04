@@ -1,18 +1,13 @@
-apt-get -qq update && apt-get -qq -y install curl bzip2 \
-    && curl -sSL https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -o /tmp/miniconda.sh \
-    && bash /tmp/miniconda.sh -bfp /usr/local \
-    && rm -rf /tmp/miniconda.sh
-conda install -y -c conda-forge \
-        python \
-        osmnx=0.8* \
-        geopandas \
-        rtree \
-        libgdal \
-        flask \
-        ncurses \
-    # && conda update conda \
-    && apt-get -qq -y remove curl bzip2 \
-    && apt-get -qq -y autoremove \
-    && apt-get autoclean \
-    && rm -rf /var/lib/apt/lists/* /var/log/dpkg.log \
-    && conda clean --all --yes
+!#/bin/bash
+
+apt-get update -y
+apt-get install -y build-essential wget libgdal-dev
+conda install -yq -c conda-forge \
+  'flask=1.0.2' \
+  'osmnx=0.8*' \
+  'geopandas=0.4*' \
+  'rtree=0.8.3' \
+  'ncurses' \
+  'pyqt' \
+  'libgdal=2.2*'
+apt-get clean
