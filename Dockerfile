@@ -27,7 +27,7 @@ COPY . /app
 WORKDIR /app
 #RUN mkdir output
 
-#EXPOSE 5000
+EXPOSE 5000
 ENV PATH /opt/conda/bin:$PATH
 ENTRYPOINT ["python"]
 CMD ["app.py"]
