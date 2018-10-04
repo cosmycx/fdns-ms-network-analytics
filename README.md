@@ -4,10 +4,9 @@ This repository was created for use by CDC programs to collaborate on public hea
 
 ## Installation (Quick Read)
 1. Clone the repository
-2. docker build -t snxa .
-3. docker run -it -p 5000:5000 -v $(pwd):/app snxa
+2. ```docker build -t snxa .```
+3. ```docker run -it -p 5000:5000 -v $(pwd):/app snxa```
 
-Replace everything within this section demarcated with “-----“ with material appropriate to your repo that is useful to your developers and users like installation steps, user guide etc.
 
 ## API Documentation
 openapi.yaml file available
