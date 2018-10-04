@@ -45,10 +45,10 @@ def graph_from_address():
     return 'ok', 200
 
 # ------------------------------------------------
-#               /graph_from_point
+#               /graph_from_place
 # ------------------------------------------------
-@app.route('/graph_from_point', methods=['POST'])
-def graph_from_point():
+@app.route('/graph_from_place', methods=['POST'])
+def graph_from_place():
 
     values = request.get_json()
     location = values.get('location')
