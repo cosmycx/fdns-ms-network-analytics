@@ -19,6 +19,8 @@ def get_file(filename):  # pragma: no cover
     except IOError as exc:
         return str(exc)
 
+#basic_stats
+
 # ------------------------------------------------
 #               / 
 # ------------------------------------------------
