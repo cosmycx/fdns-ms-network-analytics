@@ -1,6 +1,0 @@
-flask
-geopandas
-rtree
-matplotlib
-osmnx
-
