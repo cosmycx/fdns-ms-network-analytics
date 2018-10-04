@@ -5,7 +5,7 @@ This repository was created for use by CDC programs to collaborate on public hea
 
 ### This repository specific READ ME
 
-## Installation (TLDR)
+## Installation (Quick Read)
 1. Clone the repository
 2. docker build -t snxa .
 3. docker run -it -p 5000:5000 snxa
