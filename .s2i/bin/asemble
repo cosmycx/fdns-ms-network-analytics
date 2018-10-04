@@ -19,3 +19,8 @@ conda install -y -c conda-forge \
 
 echo "---> installed all artifacts"
 
+COPY . /app
+WORKDIR /app
+
+echo "---> copied everything into /app folder now"
+
