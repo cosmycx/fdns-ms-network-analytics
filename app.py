@@ -1,9 +1,25 @@
-from flask import Flask
+from flask import Flask, Response
 from flask import jsonify, request
 
+import os.path
+
+
 import osmnx as ox
+from networkx.readwrite import json_graph
 
 app = Flask(__name__)
+
+def root_dir():  # pragma: no cover
+    return os.path.abspath(os.path.dirname(__file__))
+
+
+def get_file(filename):  # pragma: no cover
+    try:
+        src = os.path.join(root_dir(), filename)
+        return open(src).read()
+    except IOError as exc:
+        return str(exc)
+
 
 # ------------------------------------------------
 #               / 
@@ -42,11 +58,22 @@ def graph_from_point():
     print(location)
     print(network_mode)
 
+    G = ox.graph_from_place('Manhattan, New York, USA', network_type='drive')
+
     if location is None:
         return "Error, please supply a valid location", 400
     if network_mode is None:
         return "Error, please supply a valid network_mode", 400
-    return 'ok', 200
+
+    ox.save_graphml(G, filename="testgraph.graphml", folder="/app")
+
+    #jdata = json_graph.tree_data(G,root=1)
+    #graphml_json = json_graph.tree_graph(jdata)
+    #return jsonify(graphml_json), 200
+    # return 'ok', 200
+    content = get_file('testgraph.graphml')
+    return Response(content, mimetype="application/xml")
+
 
 # ------------------------------------------------
 #               app run

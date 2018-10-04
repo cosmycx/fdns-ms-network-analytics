@@ -19,7 +19,11 @@ RUN conda install -y -c conda-forge \
     && apt-get autoclean \
     && rm -rf /var/lib/apt/lists/* /var/log/dpkg.log \
     && conda clean --all --yes
+
+#VOLUME . /app
+
 COPY . /app
+
 WORKDIR /app
 
 EXPOSE 5000
