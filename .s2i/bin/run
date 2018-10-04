@@ -1,4 +1,4 @@
-#!/bin/bash
+!#/bin/bash
 echo "---> Running here"
 which python
 echo "---> Running here with the version"
