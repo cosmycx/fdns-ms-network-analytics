@@ -2,5 +2,7 @@
 # General
 .DS_Store
 
-data-ui
+img
 hello.py
+data/soho_point.txt
+
