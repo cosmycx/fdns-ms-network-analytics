@@ -11,6 +11,10 @@ This repository was created for use by CDC programs to collaborate on public hea
 3. docker run -it -p 5000:5000 snxa
 
 Replace everything within this section demarcated with “-----“ with material appropriate to your repo that is useful to your developers and users like installation steps, user guide etc.
+
+## API Documentation
+openapi.yaml
+
 ## ----- End of respository specific READ ME -----
   
 ## Public Domain
