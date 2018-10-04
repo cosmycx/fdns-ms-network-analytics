@@ -1,16 +1,13 @@
-FROM continuumio/miniconda
+FROM continuumio/miniconda3
+
 MAINTAINER Team 2
-RUN apt-get update -y
-RUN apt-get install -y build-essential wget
+
 COPY . /app
 WORKDIR /app
 
 EXPOSE 5000
 
-#RUN pip install -r requirements.txt
-#RUN wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
-#RUN bash Miniconda2-latest-Linux-x86_64.sh
-RUN conda update -yq conda
-RUN conda install -yq -c conda-forge flask osmnx geopandas rtree matplotlib
+RUN conda install -yq -c conda-forge flask geopandas rtree matplotlib ncurses osmnx 
+
 ENTRYPOINT ["python"]
 CMD ["app.py"]
