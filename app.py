@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import jsonify, request
 
-# import osmnx as ox
+import osmnx as ox
 
 app = Flask(__name__)
 
