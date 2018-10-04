@@ -1,4 +1,6 @@
+!#/bin/bash
 if [[ "$1" == "-h" ]]; then
     exec /usr/libexec/s2i/usage
 fi
 echo "---> Running here"
+/app/app.py
