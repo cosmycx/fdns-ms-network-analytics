@@ -49,9 +49,8 @@ def basic_stats_from_point():
     basic_stats = ox.basic_stats(G)
 
     # ox.save_graphml(G, filename="graph_from_location.graphml", folder="/app")
-
     # content = get_file('graph_from_location.graphml')
-    return Response(basic_stats, mimetype="application/xml")
+    return Response(basic_stats, mimetype="application/json")
 
 
 # ------------------------------------------------
