@@ -27,21 +27,32 @@ def index():
     return 'Street Network Analysis'
 
 # ------------------------------------------------
-#               /graph_from_address
+#               /graph_from_point
 # ------------------------------------------------
-@app.route('/graph_from_address', methods=['POST'])
-def graph_from_address():
+@app.route('/graph_from_point', methods=['POST'])
+def graph_from_point():
 
     values = request.get_json()
-    location = values.get('location')
+    latitude = values.get('latitude')
+    longitude = values.get('longitude')
     network_type = values.get('network_type')
-    print(location)
+    print(latitude, longitude)
     print(network_type)
 
-    if location is None:
-        return "Error, please supply a valid location", 400
+    coord = (latitude, longitude)
+
+    G = ox.graph_from_point(coord, network_type=network_type)
+
+    ox.save_graphml(G, filename="graph_from_location.graphml", folder="/app")
+
+    content = get_file('graph_from_location.graphml')
+    return Response(content, mimetype="application/xml")
+
+    # if latitude or longitude is None:
+    #     return "Error, please supply valid coordinates", 400
     if network_type is None:
         return "Error, please supply a valid network_type", 400
+
     return 'ok', 200
 
 # ------------------------------------------------
@@ -56,20 +67,20 @@ def graph_from_place():
     print(location)
     print(network_type)
 
-    G = ox.graph_from_place(location, network_type=network_type)
-
     if location is None:
         return "Error, please supply a valid location", 400
     if network_type is None:
         return "Error, please supply a valid network_type", 400
 
-    ox.save_graphml(G, filename="graphfile.graphml", folder="/app")
+    G = ox.graph_from_place(location, network_type=network_type)
+
+    ox.save_graphml(G, filename="graph_from_place.graphml", folder="/app")
 
     #jdata = json_graph.tree_data(G,root=1)
     #graphml_json = json_graph.tree_graph(jdata)
     #return jsonify(graphml_json), 200
     # return 'ok', 200
-    content = get_file('graphfile.graphml')
+    content = get_file('graph_from_place.graphml')
     return Response(content, mimetype="application/xml")
 
 
