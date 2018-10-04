@@ -1,6 +1,5 @@
 #!/bin/bash
-if [[ "$1" == "-h" ]]; then
-    exec /usr/libexec/s2i/usage
-fi
 echo "---> Running here"
-/app/app.py
+which python
+echo "---> Running here with the version"
+python app.py
